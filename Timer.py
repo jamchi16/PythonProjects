@@ -1,5 +1,5 @@
 import time
-
+#this is a timer
 
 timer_start = int(input("Set timer length in seconds: "))
 
