@@ -7,13 +7,13 @@ import pandas as pd
 import math
 import vlc
 
-PokemonList = 'C:/Users/james/PycharmProjects/PythonProjects/Projects/RandomPokemonFight/Pokemon.csv'
+PokemonList = 'C:/code/git/PythonProjects/Projects/RandomPokemonFight/Pokemon.csv'
 Pokemon_dct = {}
-PokemonMovesList = 'C:/Users/james/PycharmProjects/PythonProjects/Projects/RandomPokemonFight/PokemonMoves.csv'
+PokemonMovesList = 'C:/code/git/PythonProjects/Projects/RandomPokemonFight/PokemonMoves.csv'
 PokemonMoves_dct = {}
-Intro_music = vlc.MediaPlayer("C:/Users/james/PycharmProjects/PythonProjects/Projects/RandomPokemonFight/Intro.wav")
-Battle_music = vlc.MediaPlayer("C:/Users/james/PycharmProjects/PythonProjects/Projects/RandomPokemonFight/Battle.wav")
-Victory_music = vlc.MediaPlayer("C:/Users/james/PycharmProjects/PythonProjects/Projects/RandomPokemonFight/Victory.wav")
+Intro_music = vlc.MediaPlayer("C:/code/git/PythonProjects/Projects/RandomPokemonFight/Intro.wav")
+Battle_music = vlc.MediaPlayer("C:/code/git/PythonProjects/Projects/RandomPokemonFight/Battle.wav")
+Victory_music = vlc.MediaPlayer("C:/code/git/PythonProjects/Projects/RandomPokemonFight/Victory.wav")
 P1Moves = {}
 P2Moves = {}
 P1Username = ""
