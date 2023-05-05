@@ -7,13 +7,13 @@ import pandas as pd
 import math
 import vlc
 
-PokemonList = ('C:/code/git/PythonProjects/Projects/RandomPokemonFight/Pokemon.csv')
+PokemonList = ('Pokemon.csv')
 Pokemon_dct = {}
-PokemonMovesList = ('C:/code/git/PythonProjects/Projects/RandomPokemonFight/PokemonMoves.csv')
+PokemonMovesList = ('PokemonMoves.csv')
 PokemonMoves_dct = {}
-Intro_music = vlc.MediaPlayer("C:/code/git/PythonProjects/Projects/RandomPokemonFight/Intro.wav")
-Battle_music = vlc.MediaPlayer("C:/code/git/PythonProjects/Projects/RandomPokemonFight/Battle.wav")
-Victory_music = vlc.MediaPlayer("C:/code/git/PythonProjects/Projects/RandomPokemonFight/Victory.wav")
+Intro_music = vlc.MediaPlayer("Intro.wav")
+Battle_music = vlc.MediaPlayer("Battle.wav")
+Victory_music = vlc.MediaPlayer("Victory.wav")
 P1Moves = {}
 P2Moves = {}
 P1Username = ""
