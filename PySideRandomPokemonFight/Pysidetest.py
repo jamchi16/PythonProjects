@@ -1,6 +1,6 @@
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLabel, QPushButton, QSpacerItem, \
-    QSizePolicy, QInputDialog
+    QSizePolicy, QInputDialog, QLineEdit
 
 
 class MainWindow(QMainWindow):
@@ -14,17 +14,20 @@ class MainWindow(QMainWindow):
         layout = QVBoxLayout(central_widget)
 
 
-        widget1 = QLabel("Welcome to Pokemon: Battle of Champions!\nPlayer one, please enter your name.", self)
-        widget1.setAlignment(Qt.AlignCenter)  # Align the text to the center
+        self.label = QLabel("Welcome to Pokemon: Battle of Champions!\nPlayer one, please enter your name.", self)
+        self.label.setAlignment(Qt.AlignCenter)
 
         spacer1 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         layout.addSpacerItem(spacer1)
-        layout.addWidget(widget1)
+        layout.addWidget(self.label)
 
-        self.button = QPushButton("Enter Name:", self)
+        line_edit = QLineEdit(self)
+        layout.addWidget(line_edit)
+
+        self.button = QPushButton("Enter Input:", self)
         spacer2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-        self.button.clicked.connect(self.show_input_dialog)
+        self.button.clicked.connect(lambda: self.handle_input(line_edit.text()))
 
         layout.addWidget(self.button)
         layout.addSpacerItem(spacer2)
@@ -32,13 +35,13 @@ class MainWindow(QMainWindow):
         layout.setContentsMargins(0, 0, 0, 0)
         layout.setAlignment(Qt.AlignCenter)
 
-    def show_input_dialog(self):
-        text, ok = QInputDialog.getText(self, "User Input", "Enter your name:")
-        if ok and text:
-            print("User entered:", text)
-
+    def handle_input(self, input_text):
+        # Process the input text here
+        print("User input:", input_text)
     def update_text(self, new_text):
         self.label.setText(new_text)
+
+
 
 
 if __name__ == "__main__":

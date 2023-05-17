@@ -1,0 +1,8 @@
+# Provide the path to the input directory containing the MP4 files
+input_directory_path = "C:/Users/james/OneDrive/Desktop/YoutubeClips/shortvids"
+
+# Provide the path to the input audio file (MP3)
+audio_file_path = "C:/Users/james/OneDrive/Desktop/YoutubeClips/audio/music.mp3"
+
+# Provide the path to the output directory where the combined videos will be saved
+output_directory_path = "C:/Users/james/OneDrive/Desktop/YoutubeClips/ready"
